@@ -51,8 +51,38 @@ app.filter("phnNumFormat",function(){
 
 app.controller("myCtrl",function($scope){
     $scope.phn_number = "5857336560";
-    $scope.country_code = ["+1","+91","+44","+971","+61","+55"];
-    $scope.co_code = "";
+    $scope.country_code = [
+        {
+            name: "United States",
+            img: "../images/us.png",    
+            code: "+1"
+        },
+        {
+            name: "India",
+            img: "../images/in.png",
+            code: "+91"
+        },
+        {
+            name: "United Kingdom",
+            img: "../images/uk.png",
+            code: "+44"
+        },
+        {
+            name: "United Arab Emirates",
+            img: "../images/uae.png",
+            code: "+971"
+        },
+        {
+            name: "Australia",
+            img: "../images/aus.png",
+            code: "+61"
+        },
+        {
+            name: "Brazil",
+            img: "../images/brz.png",
+            code: "+55"
+        }];
+    $scope.co_code = "+1";
     $scope.new_phnNum = "";
     
     $scope.changeValue = function(item){
