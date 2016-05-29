@@ -3,12 +3,9 @@ var app = angular.module("myApp",[]);
 app.filter("phnNumFormat",function(){
     
     return function(x){
-        console.log(" In Filter: "+x);
+    
         var co_code,fNum,out;
-        
         co_code = (x.split(" ")[0].toString()).replace(/[+]/g,'');
-        
-        console.log("country code: "+co_code);
         
         switch(co_code){
             
@@ -45,7 +42,6 @@ app.filter("phnNumFormat",function(){
             default:
                 fNum = x.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3');
                 out = "US: "+" "+fNum;
-                
         }
         
         return out;

@@ -8,15 +8,15 @@
             
             <h1 class="title">PHONE NUMBER FORMATTING APPLICATION</h1>
             <div class="inpt" id="inpt">
-                <label style="font-family: 'Play', sans-serif;">ENTER PHONE NUMBER: </label>
+                <label style="font-family: 'Play', sans-serif;font-size: 17px;margin-right: 10px;">ENTER PHONE NUMBER: </label>
 
                 <select class="select-style" id="c_code" ng-model="co_code" ng-options="x for x in country_code" ></select>
                 &nbsp;-&nbsp;
                 <input ng-model="phn_number" type="text" name="phnNum" maxlength="10" style="margin-right:10px;" />
-                <input type="button" name="btn" value="SUBMIT" ng-click="changeValue(co_code,phn_number);" />
+                <input class="button-small orange_light rounded3" type="button" name="btn" value="SUBMIT" ng-click="changeValue(co_code,phn_number);" />
             </div>
             
-            <p class="num">{{new_phnNum | phnNumFormat }}</p>
+            <p class="num" ng-show="new_phnNum !== ''">{{new_phnNum | phnNumFormat }}</p>
             
         </div>
         

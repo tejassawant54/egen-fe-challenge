@@ -9,7 +9,7 @@
     margin-top: 0px;
     margin-bottom: 20px;
     text-align: center;
-    background-color: burlywood;
+    background-color: peachpuff;
     font-family: 'Play', sans-serif;
     box-shadow: 0 8px 6px -6px black;
     
@@ -36,19 +36,46 @@
 .select-style {
     border: 1px solid #ccc;
     width: 60px;
-    border-radius: 3px;
+    height: 29px;
 }
 
 .select-style select {
     padding: 5px 8px;
     width: 130%;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    background-image: none;
-    -webkit-appearance: none;
 }
 
-.select-style select:focus {
-    outline: none;
+/* Button */
+
+.button-small{
+    color: #fff !important;
+    word-spacing: 0.25em;
+    font-family: 'Play', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    line-height: 22px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
 }
+
+.button-small{
+    padding: 3px 12px 3px;
+    font-size: 11px;
+    color: #fff;
+    text-shadow: none;
+}
+.button-small:hover{
+    color: rgba(255,255,255, 0.75);
+    text-decoration: none;
+}
+
+.rounded3 {
+    border-radius: 3px;
+}
+
+.orange_light {
+    background: #FBAD7D;     
+}
+
