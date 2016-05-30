@@ -13,7 +13,7 @@
                 <select class="select-style" id="c_code" ng-model="co_code">
                     <option ng-repeat="x in country_code" value="{{x.code}}">{{x.name+" "+x.code}}</option>
                 </select>&nbsp;-&nbsp;
-                <input ng-model="phn_number" type="text" name="phnNum" maxlength="10" style="margin-right:10px;" />
+                <input ng-model="phn_number" type="text" name="phnNum" maxlength="10" style="margin-right:10px;" pattern="[0-9]" required />
                 <input class="button-small blue_normal rounded3" type="button" name="btn" value="SUBMIT" ng-click="changeValue(co_code,phn_number);" />
             </div>
             
@@ -26,9 +26,10 @@
         
         <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="CSS/style.css" >
+        <link rel="stylesheet" type="text/css" href="CSS/style.css" >
         
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <!--script src="node_modules/angular"></script-->
         <script type="text/javascript" src="JS/script.js"></script>
         
     </body>

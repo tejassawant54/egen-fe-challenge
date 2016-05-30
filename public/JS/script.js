@@ -53,40 +53,36 @@ app.controller("myCtrl",function($scope){
     $scope.phn_number = "5857336560";
     $scope.country_code = [
         {
-            name: "United States",
-            img: "../images/us.png",    
+            name: "United States", 
             code: "+1"
         },
         {
             name: "India",
-            img: "../images/in.png",
             code: "+91"
         },
         {
             name: "United Kingdom",
-            img: "../images/uk.png",
             code: "+44"
         },
         {
             name: "United Arab Emirates",
-            img: "../images/uae.png",
             code: "+971"
         },
         {
             name: "Australia",
-            img: "../images/aus.png",
             code: "+61"
         },
         {
             name: "Brazil",
-            img: "../images/brz.png",
             code: "+55"
         }];
     $scope.co_code = "+1";
     $scope.new_phnNum = "";
+    $scope.error_msg = "Please Enter Valid Input !"; 
     
     $scope.changeValue = function(item){
-        $scope.co_code = item;
-        $scope.new_phnNum = $scope.co_code+" "+$scope.phn_number;
+        
+            $scope.co_code = item;
+            $scope.new_phnNum = $scope.co_code+" "+$scope.phn_number;
     }
 });
