@@ -18,6 +18,8 @@
   "homepage": "https://github.com/tejassawant54/egen-fe-challenge#readme",
   "dependencies": {
     "angular": "^1.5.6",
-    "express": "^4.13.4"
+    "angular-mocks": "^1.5.6",
+    "express": "^4.13.4",
+    "protractor": "^3.3.0"
   }
 }
